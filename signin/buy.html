@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <title></title>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <style>
+        .list{
+            margin-bottom:1.5%;
+        }
+    </style>
+    <script type="text/javascript">
+        function show(){
+            var count=0;
+            var btn=document.getElementById('s1');
+            var article=document.getElementById('article');
+            btn.onclick=function(){
+                count++;
+                if(count==2){
+                    count=0;
+                    article.style.display='none';
+                }else{
+                    article.style.display='block';
+                }
+            }
+        }
+        function show(btn,article){
+            var count=0;
+            btn.onclick=function(){
+                count++;
+                if(count==2){
+                    count=0;
+                    article.style.display='none';
+                }else{
+                    article.style.display='block';
+                }
+            }
+        }
+        window.onload=function(){
+           var btns=document.getElementsByClassName('button');
+           var articles=document.getElementsByClassName('article');
+           for(var i=0;i<btns.length;i++){
+               show(btns[i],articles[i]);
+           }
+        }
+
+
+//
+//        function show(){
+//            var btns=document.getElementsByClassName('button');
+//            var articles=document.getElementsByClassName('article');
+//            var count=0;
+//            var temp;
+//            for(var i=0;i<btns.length;i++){
+//                temp = articles[i];
+//                btns[i].onclick=function(){
+//                    var t = temp;
+//                    console.log(i);
+//                    t.style.display='block';
+//                    console.log(t);
+//                }
+//            }
+//        }
+//        window.onload=function(){
+//            show();
+//        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default" style="background: #679FFF">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="...">
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="row" style="padding-left: 4%;padding-right: 4%">
+    <ol class="breadcrumb">
+        <li><a href="index.html">主页</a></li>
+        <li class="active">我的订单</a></li>
+    </ol>
+</div>
+<div class="container-fluid information">
+    <h4>订单号:#12132124245535</h4>
+    <div class="row list">
+        <div class="col-xs-3"><img src="images/7.jpg" alt="" width="100%" /></div>
+        <div class="col-xs-8" style="border-top: 1px solid #cccccc">
+            <h6 style="font: 14px bolder ;line-height: 14px;color: #f00">￥<span>36</span></h6>
+            <p  style="font: 14px bolder ;line-height: 14px;">下单时间:<span class="#">13:00</span></p>
+            <p style="font: 14px bolder ;line-height: 14px;">黄瓜味道的薯片很好吃</p>
+        </div>
+    </div>
+    <div  class="row col-xs-12 article" style="display:none;padding: 0 2% 2%;float: left;text-align: center">
+        开源bootstrap神器，基于bootstrap极速开发框架!
+        彻底开源!基于bootstrap快速开发， 敢说bootstrapNo 1，移动/web app开发必选!开源免费，超越bootstrap的极速开发框架，移动app/微信app/web app/hybrid app开发神器。
+        www.wex5.com 2016-01
+        - 评价
+    </div>
+
+    <div class="row ">
+        <button class="btn btn-sm btn-default col-xs-11 button" style="margin: 0 2% 2%" >详情..</button>
+    </div>
+</div>
+<div class="container-fluid information">
+    <h4>订单号:#12132124245535</h4>
+    <div class="row list">
+        <div class="col-xs-3"><img src="images/7.jpg" alt="" width="100%" /></div>
+        <div class="col-xs-8" style="border-top: 1px solid #cccccc">
+            <h6 style="font: 14px bolder ;line-height: 14px;color: #f00">￥<span>36</span></h6>
+            <p  style="font: 14px bolder ;line-height: 14px;">下单时间:<span class="#">13:00</span></p>
+            <p style="font: 14px bolder ;line-height: 14px;">黄瓜味道的薯片很好吃</p>
+        </div>
+    </div>
+    <div  class="row col-xs-12 article" style="display:none;padding: 0 2% 2%;float: left;text-align: center">
+        开源bootstrap神器，基于bootstrap极速开发框架!
+        彻底开源!基于bootstrap快速开发， 敢说bootstrapNo 1，移动/web app开发必选!开源免费，超越bootstrap的极速开发框架，移动app/微信app/web app/hybrid app开发神器。
+        www.wex5.com 2016-01
+        - 评价
+    </div>
+
+    <div class="row ">
+        <button class="btn btn-sm btn-default col-xs-11 button" style="margin: 0 2% 2%" >详情..</button>
+    </div>
+</div>
+<div class="container-fluid information">
+    <h4>订单号:#12132124245535</h4>
+    <div class="row list">
+        <div class="col-xs-3"><img src="images/7.jpg" alt="" width="100%" /></div>
+        <div class="col-xs-8" style="border-top: 1px solid #cccccc">
+            <h6 style="font: 14px bolder ;line-height: 14px;color: #f00">￥<span>36</span></h6>
+            <p  style="font: 14px bolder ;line-height: 14px;">下单时间:<span class="#">13:00</span></p>
+            <p style="font: 14px bolder ;line-height: 14px;">黄瓜味道的薯片很好吃</p>
+        </div>
+    </div>
+    <div  class="row col-xs-12 article" style="display:none;padding: 0 2% 2%;float: left;text-align: center">
+        开源bootstrap神器，基于bootstrap极速开发框架!
+        彻底开源!基于bootstrap快速开发， 敢说bootstrapNo 1，移动/web app开发必选!开源免费，超越bootstrap的极速开发框架，移动app/微信app/web app/hybrid app开发神器。
+        www.wex5.com 2016-01
+        - 评价
+    </div>
+
+    <div class="row ">
+        <button class="btn btn-sm btn-default col-xs-11 button" style="margin: 0 2% 2%" >详情..</button>
+    </div>
+</div>
+<div class="container-fluid information">
+    <h4>订单号:#12132124245535</h4>
+    <div class="row list">
+        <div class="col-xs-3"><img src="images/7.jpg" alt="" width="100%" /></div>
+        <div class="col-xs-8" style="border-top: 1px solid #cccccc">
+            <h6 style="font: 14px bolder ;line-height: 14px;color: #f00">￥<span>36</span></h6>
+            <p  style="font: 14px bolder ;line-height: 14px;">下单时间:<span class="#">13:00</span></p>
+            <p style="font: 14px bolder ;line-height: 14px;">黄瓜味道的薯片很好吃</p>
+        </div>
+    </div>
+    <div  class="row col-xs-12 article" style="display:none;padding: 0 2% 2%;float: left;text-align: center">
+        开源bootstrap神器，基于bootstrap极速开发框架!
+        彻底开源!基于bootstrap快速开发， 敢说bootstrapNo 1，移动/web app开发必选!开源免费，超越bootstrap的极速开发框架，移动app/微信app/web app/hybrid app开发神器。
+        www.wex5.com 2016-01
+        - 评价
+    </div>
+
+    <div class="row ">
+        <button class="btn btn-sm btn-default col-xs-11 button" style="margin: 0 2% 2%" >详情..</button>
+    </div>
+</div>
+<div class="container-fluid information">
+    <h4>订单号:#12132124245535</h4>
+    <div class="row list">
+        <div class="col-xs-3"><img src="images/7.jpg" alt="" width="100%" /></div>
+        <div class="col-xs-8" style="border-top: 1px solid #cccccc">
+            <h6 style="font: 14px bolder ;line-height: 14px;color: #f00">￥<span>36</span></h6>
+            <p  style="font: 14px bolder ;line-height: 14px;">下单时间:<span class="#">13:00</span></p>
+            <p style="font: 14px bolder ;line-height: 14px;">黄瓜味道的薯片很好吃</p>
+        </div>
+    </div>
+    <div  class="row col-xs-12 article" style="display:none;padding: 0 2% 2%;float: left;text-align: center">
+        开源bootstrap神器，基于bootstrap极速开发框架!
+        彻底开源!基于bootstrap快速开发， 敢说bootstrapNo 1，移动/web app开发必选!开源免费，超越bootstrap的极速开发框架，移动app/微信app/web app/hybrid app开发神器。
+        www.wex5.com 2016-01
+        - 评价
+    </div>
+
+    <div class="row ">
+        <button class="btn btn-sm btn-default col-xs-11 button" style="margin: 0 2% 2%" >详情..</button>
+    </div>
+</div>
+<div class="about container-fluid col-xs-12" style="margin: 2% auto 0 auto;background: #679FFF">
+    <div class="row">
+        <p style="text-align: center;line-height: 100%;padding-top: 4%"><span style="padding: 2% ">导航</span><span style="padding: 2%">客户端</span><span style="padding: 2% ">吐槽</span></p>
+    </div>
+    <div class="row">
+        <p style="text-align: center;line-height: 100%">xxxx(粤ICP0000XXXX)</p>
+    </div>
+</div>
+</body>
+
+</body>
+</html>
