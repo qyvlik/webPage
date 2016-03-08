@@ -18,12 +18,13 @@
             background:  #679fff;
         }
         .navbar-header .navbar-user_photo img{
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            line-height: 90%;
+            line-height: 100%;
             margin: 2% 8% 2% 0;
             padding: 2%;
+            vertical-align: middle;
             background:#ffffff ;
         }
         .navbar-header .navbar-user_photo img:hover{
@@ -51,17 +52,20 @@
             margin-top: 4%;
         }
         .list{
-           border-top: 1px solid #F7F7F7;
+           border-top: 1px solid #dddddd;
             margin-bottom: 1.5%;
         }
         .list:last-child{
-            border-bottom: 1px solid #F7F7F7;
+            border-bottom: 1px solid #dddddd;
         }
         .list a,.list span{
             display: inline-block; 
-            font-size: 14px;
+            font-size: 15px;
             line-height: 35px;
             color: #333333;
+        }
+        .list span{
+        	font-size: 12px;
         }
         #login{
             height: 50px;
@@ -193,7 +197,7 @@
         <h4 style="color: #337AB7;">猜你喜欢</h4>
         <div class="row list" >
             <div class="col-xs-9 ">
-                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈哈</a>
+                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈</a>
             </div>
             <div class="col-xs-3"><a href="http://www.baidu.com" style="text-decoration: none;"><span id="">24</span> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a></div>
             <!--span中的id是留给count计算评论数的-->
