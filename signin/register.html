@@ -13,25 +13,23 @@
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
     <link rel="stylesheet" type="text/css" href="<c:url value='/css/regist.css'/>">
-    <!--
-        <link rel="stylesheet" type="text/css" href="styles.css">
-
-        -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<c:url value='/js/login.js' />" ></script>
-
+    <style type="text/css">
+        .text-center span a{
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body style="background-color: rgba(149, 175, 222, 0.54)">
 <!--<input type="hidden" name="method" value="login">-->
 <h3 class="navbar-fixed-top" style=" height:40px;line-height:40px;text-align: center;color:rgb(255, 252, 70);font-size:16px;font-weight:bold;background-color: #679fff;position: relative">注册页面</h3>
 <form action="UserServlet" class="form">
-
-    <div class="text-center" ><img src="images/01.jpg" class="img-responsive center-block" style="border-radius: 50%;text-align: center" alt=""/></div>
     <div class="col-sm-12" >
         <div class="input-group input-group-lg">
             <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
