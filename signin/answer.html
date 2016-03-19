@@ -14,6 +14,10 @@
 			$(".answer").addClass("singleAnswer");
 		});
 	</script>
+	<style type="text/css">
+		/*test_type=1,selectCount<4;单项选择题*/
+		.singleAnswer,.singleAnswer2,.singleAnswer3,.multiAnswer,.multiAnswer1,.textAnswer{width: 100%;height: auto;border: 1px solid #cccccc;}
+	</style>
     <style type="text/css">
 		#question{
 			width: 100%;
@@ -22,8 +26,17 @@
 		}
 		#answer{
 			width: 100%;
-			height: 100px;
+			height: auto;
 			border: 1px solid #cccccc;
+		}
+
+		.mutilDiv{
+			padding: 2%;
+			text-align:center;
+		}
+		
+		.radioTable{
+			margin: 0px auto;
 		}
 
     </style>
@@ -64,14 +77,58 @@
 				<!-- test_type为2时：表示多选题，分为selecount为４表示共４选项，selcount为６时表示６个选项 -->
 				<!-- test_type为3时：表示填空题 -->
 				<!-- 以下根据题目类型及备选答案数目selcount控制显示的项目数 -->
-				<table class="radioTable" style="margin: 0px auto">
+			<!--1. 单项选择是两道题 -->
+				<!-- <table class="radioTable" >
 					<tr>
 						<td><input type="radio" name="singleanswer" value="a">男</td>
-					</tr>
-					<tr>
+					
 						<td><input type="radio" name="singleanswer" value="b">女</td>
 					</tr>
-				</table>
+					
+				</table> -->
+				<!-- 单项选择是4道 -->
+				<!-- <table class="radioTable" >
+					<tr>
+						<td><input type="radio" name="singleanswer" value="a">男</td>
+					
+						<td><input type="radio" name="singleanswer" value="b">女</td>
+						<td><input type="radio" name="singleanswer" value="a">男</td>
+					
+						<td><input type="radio" name="singleanswer" value="b">女</td>
+					</tr>
+					
+				</table> -->
+				<!-- 多项选择时候 -->
+				<!-- <input type="hidden" name="method" id="method">
+
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="a"
+									> 避孕套<br />
+							</div>
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="b"
+									>避孕药<br />
+							</div>
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="c"
+									>情趣衣物<br />
+							</div>
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="d"
+									>充气娃娃<br />
+							</div>
+						
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="e"
+									>调情工具<br />
+							</div>
+					
+							<div class="mutilDiv">
+								<input type="checkbox" name="multianswer" value="f"
+									>没有想过<br />
+							</div>
+						
+				 -->
 			</form>
 		</div>
     </div>
