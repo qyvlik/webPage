@@ -21,7 +21,8 @@
     <style type="text/css">
 		#question{
 			width: 100%;
-			height:200px;
+			height:auto;
+
 			border: 1px solid #ccc;
 		}
 		#answer{
@@ -32,28 +33,60 @@
 
 		.mutilDiv{
 			padding: 2%;
-			text-align:center;
+			text-align:left;
+			padding-left: 12%;
 		}
 		
-		.radioTable{
-			margin: 0px auto;
-		}
-
+		.navbar {
+            width: 100% !important;
+            background:  #679fff;
+        }
+        form{
+        	padding-left: 12%;
+        }
+        .navbar-header .navbar-user_photo img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 100%;
+            margin: 2% 8% 2% 0;
+            padding: 2%;
+            vertical-align: middle;
+            background:#ffffff ;
+        }
+        .navbar-header .navbar-user_photo img:hover{
+            border: 1px solid #81E4FF;
+        }
+        .navbar-header a{
+        	padding-right: 5px;
+        }
+        
     </style>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" style="background: #679FFF">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand col-xs-2" href="#">
-                <img alt="Brand" src="">
-            </a>
-            <a class="navbar-brand col-xs-8" style="text-align: center">
-                <span>测试中心</span>
-            </a>
+ <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            
+                <!-- 网站 logo -->
+                <a class="navbar-brand" href="#">
+                    <img alt="康乐吧" src="">
+                </a>
+                <!-- 网站 logo -->
+                <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                	退出
+                </a>
+                <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+					我的
+                </a>
+               <!--  <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#"> 
+                    <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
+                </a> -->
+                <!-- 用户头像 -->
+                
+            </div>
         </div>
-    </div>
-</nav><!--导航栏结束-->
+    </nav><!--导航栏结束-->
 <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px solid rgba(221, 221, 221, 0.24)">
     <div class="row">
         <h4 style="text-align: center">性心理学测试</h4>
@@ -62,13 +95,14 @@
 <div class="container-fluid" >
     <div class="row" id="question" style="margin: 5% auto 2% auto;">
 		<div class="divpicture">
-			<img src="f4757810681.png" height="300px">
+			<img src="https://raw.githubusercontent.com/qyvlik/Flat.qml/master/Screenshot/ButtonType.png" height="auto" width="100%">
+			<!-- f4757810681.png -->
 		</div>
     </div>
 </div>
 <div class="container-fluid" >
     <div class="row" id="answer" style="margin: 5% auto 2% auto;">
-		<p class="ptext" style="text-align: center;">你的性别？</p>
+		<p class="ptext" style="font-size:1.5em;text-align: left;padding-left: 5%;">你的性别？</p>
 		<div class="answer">
 			<form id="myform" method="post">
 				<input type="hidden" name="method" id="method">
@@ -129,6 +163,23 @@
 							</div>
 						
 				 -->
+				<table class="radioTable"> 
+				   <tbody>
+				    <tr> 
+				     <td><input type="radio" name="singleanswer" value="a" /> 非常希望</td> 
+				    </tr> 
+				    <tr> 
+				     <td><input type="radio" name="singleanswer" value="b" /> 一般</td> 
+				    </tr> 
+				    <tr> 
+				     <td><input type="radio" name="singleanswer" value="c" /> 无所谓</td> 
+				    </tr> 
+				    <tr> 
+				     <td><input type="radio" name="singleanswer" value="d" /> 从未考虑过</td> 
+				    </tr> 
+				   </tbody>
+		 		</table>
+
 			</form>
 		</div>
     </div>
