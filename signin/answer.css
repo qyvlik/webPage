@@ -1,0 +1,52 @@
+#question{
+			width: 100%;
+			height:auto;
+
+			border: 1px solid #ccc;
+		}
+		#answer{
+			width: 100%;
+			height: auto;
+			border: 1px solid #cccccc;
+            margin: 5% auto 2% auto;
+		}
+        .ptext{
+            font-size:1.5em
+            text-align: left;
+            padding-left: 5%;
+        }
+
+		.mutilDiv{
+			padding: 2%;
+			text-align:left;
+			padding-left: 12%;
+		}
+		
+		.navbar {
+            width: 100% !important;
+            background:  #679fff;
+        }
+        form{
+        	padding-left: 12%;
+        }
+        .navbar-header .navbar-user_photo img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 100%;
+            margin: 2% 8% 2% 0;
+            padding: 2%;
+            vertical-align: middle;
+            background:#ffffff ;
+        }
+        .navbar-header .navbar-user_photo img:hover{
+            border: 1px solid #81E4FF;
+        }
+        .navbar-header a{
+        	padding-right: 5px;
+            font-size:16px;
+            line-height: 50px;
+        }
+        .navbar-header h4{
+            text-align: center;
+        }
