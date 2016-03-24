@@ -14,7 +14,7 @@
     <style type="text/css">
         #answer{
             width: 100%;
-            height: 200px;
+            height: auto;
             border: 1px solid #cccccc;
         }
         .navbar {
@@ -53,36 +53,37 @@
                     <img alt="康乐吧" src="">
                 </a>
                 <!-- 网站 logo -->
-                <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="http://219.136.229.53:8082/syc/UserServlet?method=loginout">
                     退出
                 </a>
-                <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="http://219.136.229.53:8082/syc/UserServlet?method=findUserById&user_account=%E6%B8%B8%E5%AE%A238695438">
                     我的
                 </a>
-               <!--  <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#"> 
-                    <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
-                </a> -->
-                <!-- 用户头像 -->
                 
             </div>
         </div>
     </nav><!--导航栏结束-->
-   <div class="container-fluid"  style="margin-top: 80px;">
+    <div class="container-fluid"  style="margin-top: 80px;">
         <div class="row" id="answer" style="margin: 5% auto 2% auto;">
-            
+            <p>&nbsp;&nbsp;&nbsp;<a href="http://219.136.229.53:8082/syc/IndexServlet?method=domainNavi&tag=%E9%97%AE%E5%8D%B7">问卷</a> &gt;&gt;&gt; 大学生性知识问卷调查 </p>
+                <div class="col-xs-12">谢谢您的参与! 欢迎再来！</div>
+                <div class="col-xs-12">谢谢您的参与! 欢迎再来！</div>
+                <div class="col-xs-12">猜你喜欢</div> 
+       
         </div>
     </div>
-    <div class="row" id="page" style="margin: 5% auto 2% auto;">
-        <div class="col-xs-12">
-            <button class="next btn btn-primary pull-right"><a
-                        href="<c:url value='/TestServlet?method=loadTest&tag=next' />" style="color: #fff;float: right;">评论</a></button>
+
+   <!-- 这里是分割线 -->
+    <div class="container-fluid pull-right" id="page" style="margin: 5% auto 2% auto;">
+        <div class="col-xs-12 row">
+            <button class="commment btn btn-primary "><a href="<c:url value='/TestServlet?method=loadTest&tag=next' />" style="color: #fff;">评论</a></button>
         </div>
     </div>
     
-<div class="about container-fluid col-xs-12" style="position:absolute;bottom:0;margin: 2% auto 0 auto;background: #679FFF">
-    <div class="row">
-        <p style="text-align: center;line-height: 100%">copyright&copy;2014-2016  康乐吧</p>
+   <div class="about container-fluid col-xs-12" style="position:absolute;left:0;bottom:0;margin: 2% auto 0 auto;background: #679FFF">
+         <div class="row">
+             <p style="text-align: center;line-height: 100%">copyright&copy;2014-2016  康乐吧</p>
+        </div>
     </div>
-</div>
-</body>
+    </body>
 </html>
