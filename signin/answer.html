@@ -102,8 +102,8 @@
 </div>
 <div class="container-fluid" >
     <div class="row" id="answer" style="margin: 5% auto 2% auto;">
-		<p class="ptext" style="font-size:1.5em;text-align: left;padding-left: 5%;">你的性别？</p>
-		<div class="answer">
+		<p class="ptext" style="font-size:1.2em;text-align: left;padding-left: 5%;">你的性别？</p>
+		<div class="answer" style="font-size: 1.2em">
 			<form id="myform" method="post">
 				<input type="hidden" name="method" id="method">
 				<!-- 以下根据测试类型不同，让页面显示不同的内容 -->
@@ -203,13 +203,13 @@
 		</div>
     </div>
     </div>
-    
+    <div class="none" style="padding: 4%"></div>
     <div class="container">
 	<div class="row" style="text-align: center;">
 			<c:if test="${tests[0].test_type!=4 }">
-            <span><a href="TestServlet?method=testSubmit" style="padding: 2%;">提交</a></span>
+            <span><a href="TestServlet?method=testSubmit" style="padding: 8%;">提交</a></span>
             </c:if>
-			<span><a href="IndexServlet?method=getProject" style="padding: 2%;">返回主页</a></span>
+			<span><a href="IndexServlet?method=getProject" style="padding: 8%;">返回主页</a></span>
 	</div>
     </div>
     
