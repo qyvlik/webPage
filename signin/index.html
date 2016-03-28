@@ -85,18 +85,27 @@
         }
         	   
         .article{
-            width: 85%;
+            width: 86%;
             padding-left: 0px;
             padding-right: 0px;
             margin: 0px;
         }
         .comment{
-            width: 15%;
-             padding-right: 5px;
-                padding-left: 5px;
+            width: 14%;
+             padding-right: 0px;
+                padding-left: 0px;
         }
-        
+        .glyphicon-comment1{
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 25%;
+            background:url("images/ifgLisPl.gif") no-repeat center right;
+            background-size: 12px auto;
+
+        }
     </style>
+  
 </head>
 <body>
     <!-- 顶部导航栏，有用户头像，用于跳转到登陆界面和注册界面的  -->
@@ -188,17 +197,17 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://www.runoob.com/wp-content/uploads/2014/07/slide1.png" alt="...">
+                        <img src="http://f1.p0y.cn/c/290/471330.jpg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://www.runoob.com/wp-content/uploads/2014/07/slide1.png" alt="...">
+                        <img src="http://f1.p0y.cn/c/555/482859.jpg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://www.runoob.com/wp-content/uploads/2014/07/slide1.png" alt="...">
+                        <img src="http://d.ifengimg.com/w750_h422/y1.ifengimg.com/cmpp/2016/03/27/4bd8a7742bf80c4530ec3e3b8ebf6059_size441_w750_h422.jpg" alt="...">
                         <div class="carousel-caption">
                         </div>
                     </div>
@@ -222,35 +231,36 @@
     <!-- 文章分区 -->
     <div class="container-fluid information " style="margin: 0 4% 0 4%;">
         <h4 style="color: #337AB7;">猜你喜欢</h4>
-        <div class="row list" >
+          
+         <div class="row list" >
             <div class="col-xs-9 article">
-                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈</a>
+                <a href="###">黄瓜味薯很好哈哈哈哈</a>
             </div>
-            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float:left;"class="">224</span> <span style="float:left;" class=" glyphicon glyphicon-comment"aria-hidden="true"></span></a></div>
+            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">2224</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
          <div class="row list" >
             <div class="col-xs-9 article">
-                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈</a>
+                <a href="###">黄瓜味道的薯片好哈哈哈哈</a>
             </div>
-            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float:left;"class="">224</span> <span style="float:left;" class=" glyphicon glyphicon-comment"aria-hidden="true"></span></a></div>
+            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">24</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
          <div class="row list" >
             <div class="col-xs-9 article">
-                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈</a>
+                <a href="###">黄瓜味道很好哈哈哈哈</a>
             </div>
-            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float:left;"class="">224</span> <span style="float:left;" class=" glyphicon glyphicon-comment"aria-hidden="true"></span></a></div>
+            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">224</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
          <div class="row list" >
             <div class="col-xs-9 article">
-                <a href="###">黄瓜味道的薯片很好吃哈哈哈哈</a>
+                <a href="###">黄瓜味道的好哈哈哈哈</a>
             </div>
-            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float:left;"class="">224</span> <span style="float:left;" class=" glyphicon glyphicon-comment"aria-hidden="true"></span></a></div>
+            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">24</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
-               
+        
         <div class="row " style="padding-top: 2%;border-top: 1px solid #dddddd;">
             <a href="http://www.baidu.com"><button class="btn btn-sm btn-default col-xs-11" style="margin: 0 2% 2%;border: none;" id="#"> 加载更多>>></button></a>
         </div>
@@ -274,6 +284,15 @@
         </div>
     </div>
     <!-- 页脚 -->
+      <script type="text/javascript">  
+        
+         var number=document.getElementsByClassName('number');
+            for(var i=0;i<number.length;i++){
+                 if (parseInt(number[i].innerText)<99) {
+                    number[i].innerHTML= "&nbsp;&nbsp;"+number[i].innerText;
+                }
+            }
+    </script>
     
 </body>
 </html>
