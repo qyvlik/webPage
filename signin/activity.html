@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no"name="viewport" id="viewport" />
+<link rel="stylesheet" type="text/css"href="/syc/css/newTest.css;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0">
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/syc/js/cart.js;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0" type="text/javascript"></script>
+<!-- //以下为各Input添加click事件，在事件中执行存贮；根据测试题目文本内容长度不同，设置不同尺寸的div高度 -->
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+    }
+    .navbar {
+        width: 100% !important;
+        background:  #679fff;
+    }
+    .navbar-header .navbar-user_photo img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 100%;
+        margin: 2% 8% 2% 0;
+        padding: 2%;
+        vertical-align: middle;
+        background:#ffffff ;
+    }
+    .navbar-header .navbar-user_photo img:hover{
+        border: 1px solid #81E4FF;
+    }
+    .row{
+      margin: 0;
+    }
+    .col-xs-2,col-xs-8,.col-xs-12{
+      padding: 2px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px;
+    }
+    .col-xs-6{
+      padding: 0px;
+    }
+    .first_column{
+      margin-bottom: 100px;
+    }
+    td{
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    #information{
+      margin-left: 1px;
+      margin-right:1px;
+      border-bottom:1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+	<!-- 插入头部页面 -->
+    <!-- 顶部导航栏，有用户头像，用于跳转到登陆界面和注册界面的 divlogo -->
+    <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <!-- 网站 logo -->
+                <a class="navbar-brand" href="IndexServlet?method=getProject">
+                    <img alt="康乐吧" src="">
+                </a>
+                <!-- 网站 logo -->
+
+                <!-- 登陆按钮 直接跳转到登陆页面，登陆页面也有注册页面 -->
+                    <a class="navbar-user_photo pull-right col-lg-push-2" href="pages/login.jsp"">
+                        <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
+                    </a>
+
+
+                <!-- 登陆按钮 -->
+            </div>
+        </div>
+    </nav>
+    <!-- 顶部导航栏，有用户头像  -->
+	 <div class="container-fluid col-xs-12" style="margin-top:60px;">
+     <div class="row"  id="information">
+       <div class="col-xs-1"></div>
+       <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findUserById ">资料</a></div>
+       <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findTestProject" >学习</a></div>
+       <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findAtivis" >活跃度</a></div>
+       <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyCart">购物车</a></div>
+       <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyOrders">订单</a></div>
+      <div class="col-xs-1"></div>
+    </div>
+   </div>
+<div class="container-fluid">
+      <table class="row col-xs-12" style="border-bottom:1px solid #cccccc;padding:10px 0px;">
+          <tr><td>用户</td><td>会员积分</td></tr>
+          <tr><td>12324</td><td>1234</td></tr>
+          <tr><td>12324</td><td>1234</td></tr>
+          <tr><td>12324</td><td>1234</td></tr>
+      </table>
+</div>
+<div class="tail">
+  <div class="about container-fluid col-xs-12" style="position:absolute;bottom:0;margin: 2% auto 0 auto;background: #679FFF">
+    <div class="row">
+        <p style="text-align: center;line-height: 100%">copyright&copy;2014-2016  康乐吧</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
