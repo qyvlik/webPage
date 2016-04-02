@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/main.css"/>
-    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript"></script>
-    <!--<script type="text/javascript" src="<c:url value='/js/login.js' />" ></script>-->
-    <style type="text/css">
+ <head lang="en"> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <title></title> 
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/main.css" /> 
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+  <script type="text/javascript"></script> 
+  <!--<script type="text/javascript" src="<c:url value='/js/login.js' />" ></script>--> 
+  <style type="text/css">
 
         *{
             padding: 0;
@@ -35,250 +35,269 @@
         .navbar-header .navbar-user_photo img:hover{
             border: 1px solid #81E4FF;
         }
-        .container{
-            padding: 0px auto;
-            margin-top: 10px;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #C0CBDF;
-        }
-        .container  .row{
-            padding: 8px 0px;
-        }
-        .container .row button{
-            display: inline-block;
-            height:34px;
+	    .col-xs-2,col-xs-8,.col-xs-12{
+	      padding: 2px;
+	      text-align: center;
+	      font-size: 16px;
+	      margin: 0px;
+	    }
+	    .col-xs-6{
+	      padding: 0px;
+	    }
+	    .first_column{
+	      margin-bottom: 100px;
+	    }
+	    #information{
+	      margin-left: 1px;
+	      margin-right:1px;
+	      border-bottom:1px solid #ccc;
+	    }
+	    .row{
+	    	margin: 1em ;
 
-        }
-        .container .row b{
-            line-height: 34px;
-        }
+	    	
+	    }
+	    .col-xs-3{
+	    	font-size: 1.3em;
+	    	font-weight: bold;
+	    	padding: 0px;
+	    	margin: 2% 0;
+	    	
+	    }
+		.col-xs-9{
+			padding: 0px;
 
-        .container .row input{
-
-            width: 65%;
-            height: 34px;
-            margin-left: 1.5%;
-        }
-        .row{
-          margin: 0;
-        }
-        .col-xs-2,col-xs-8,.col-xs-12{
-          padding: 2px;
-          text-align: center;
-          font-size: 16px;
-          margin: 0px;
-        }
-        .col-xs-6{
-          padding: 0px;
-        }
-        .first_column{
-          margin-bottom: 100px;
-        }
-        td{
-          border: 1px solid #ccc;
-          text-align: center;
-        }
-        #information{
-          margin-left: 1px;
-          margin-right:1px;
-          border-bottom:1px solid #ccc;
-        }
-
-    </style>
-</head>
-<body style="background: rgba(149, 175, 222, 0.54)">
-  <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
-      <div class="container-fluid">
-          <div class="navbar-header">
-
-              <!-- 网站 logo -->
-              <a class="navbar-brand" href="IndexServlet?method=getProject">
-                  <img alt="康乐吧" src="">
-              </a>
-              <!-- 网站 logo -->
-
-              <!-- 登陆按钮 直接跳转到登陆页面，登陆页面也有注册页面 -->
-                  <a class="navbar-user_photo pull-right col-lg-push-2" href="pages/login.jsp"">
-                      <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
-                  </a>
-
-
-              <!-- 登陆按钮 -->
-          </div>
-      </div>
-  </nav>
-  <div class="container-fluid col-xs-12" style="margin-top:40px;">
-    <div class="row"  id="information">
-      <div class="col-xs-1"></div>
-      <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findUserById ">资料</a></div>
-      <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findTestProject" >学习</a></div>
-      <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findAtivis" >活跃度</a></div>
-      <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyCart">购物车</a></div>
-      <div class="col-xs-2"><a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyOrders">订单</a></div>
-     <div class="col-xs-1"></div>
+		}
+		span{
+			display: inline-block;
+			font-size: 1.5em;
+		}
+    </style> 
+ </head> 
+ <body style="background: rgba(149, 175, 222, 0.54)"> 
+  <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12"> 
+   <div class="container-fluid"> 
+    <div class="navbar-header"> 
+     <!-- 网站 logo --> 
+     <a class="navbar-brand" href="IndexServlet?method=getProject"> <img alt="康乐吧" src="" /> </a> 
+     <!-- 网站 logo --> 
+     <!-- 登陆按钮 直接跳转到登陆页面，登陆页面也有注册页面 --> 
+     <a class="navbar-user_photo pull-right col-lg-push-2" href="pages/login.jsp" "=""> <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&amp;quality=100&amp;size=b4000_4000&amp;sec=1457163173&amp;di=f743cadfb9237653a94920504a847160&amp;src=http://baozoumanhua.com/avatars/original/missing.png?1339749755" /> </a> 
+     <!-- 登陆按钮 --> 
+    </div> 
+   </div> 
+  </nav> 
+  
+  <div class="container-fluid col-xs-12"> 
+   <div class="row" id="information"> 
+    <div class="col-xs-1"></div> 
+    <div class="col-xs-2">
+     <a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findUserById ">资料</a>
+    </div> 
+    <div class="col-xs-2">
+     <a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findTestProject">学习</a>
+    </div> 
+    <div class="col-xs-2">
+     <a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findAtivis">活跃度</a>
+    </div> 
+    <div class="col-xs-2">
+     <a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyCart">购物车</a>
+    </div> 
+    <div class="col-xs-2">
+     <a href="UserServlet;jsessionid=89A453AF75EBFAA7E00D5A2C7869E9A0?method=findMyOrders">订单</a>
+    </div> 
+    <div class="col-xs-1"></div> 
+   </div> 
+  </div> 
+  
+  <form action="UserServlet" id="regist_form" style="margin-top:80px;"> 
+   <input type="hidden" name="method" value="updateUser" /> 
+   <div class="row"> 
+    <div class="col-xs-3 ">
+     帐&nbsp;&nbsp;&nbsp;&nbsp;号
+    </div> 
+    <div class="col-xs-9 "> 
+     <span>${user.user_acount}</span> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     现积分
+    </div> 
+    <div class="col-xs-9">
+     <span>${score}</span>
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     注册时
+    </div> 
+    <div class="col-xs-9">
+     <span>${user.regist_time}</span>
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     昵&nbsp;&nbsp;&nbsp;&nbsp;称
+    </div> 
+    <div class="col-xs-9 ">
+     <input class="form-control input-lg" type="text" name="nickname" value="${user.nickname }" />
+    </div> 
+   </div> 
+   <div class="row">
+    <span>以下10项，每项正确的积1分</span>
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     手机
+    </div> 
+    <div class="col-xs-9 ">
+     <input class="form-control input-lg" type="tel" name="telephone" value="${user.telephone}" pattern="[0-9]{11,14}" maxlength="14" required="" title="11-14 位,无空格" /> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     Q Q
+    </div> 
+    <div class="col-xs-9 "> 
+     <input type="text" class="form-control input-lg col-lg-*" name="qq" value="${user.qq }" /> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     微信
+    </div> 
+    <div class="col-xs-9 ">
+     <input type="text" class="form-control input-lg" name="weixin" value="${user.weixin }" />
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     Email
+    </div> 
+    <div class="col-xs-9 "> 
+     <input type="email" class="form-control input-lg" name="email" id="email" value="${user.email }" />
+     <span class="erromsg"></span>
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     职业
+    </div> 
+    <div class="col-xs-9 "> 
+     <input type="text" class="form-control input-lg" name="occupation" value="${user.occupation }" /> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     教育
+    </div> 
+    <div class="col-xs-9"> 
+     <select name="education" value="${user.education}" class="form-control input-lg"> <option value="小学" class="form-control input-lg">小学</option> <option value="初中">初中</option> <option value="高中">高中</option> <option value="中专">中专</option> <option value="中技">中技</option> <option value="大专">大专</option> <option value="本科">本科</option> <option value="研究生">研究生</option> <option value="博士">博士</option> <option value="博士后">博士后</option> </select> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div class="col-xs-3">
+     性别
+    </div> 
+    <div class="col-xs-9"> 
+     <input type="radio" name="sex" style="font-size:1.5em;" />
+     <span>男</span> 
+     <input type="radio" name="sex" style="font-size:1.5em;" />
+     <span>女</span>
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     年龄
+    </div> 
+    <div class="col-xs-9"> 
+     <input type="number" class="form-control input-lg" name="age" value="${user.age}" min="0" max="99" maxlength="2" /> 
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     婚否
+    </div> 
+    <div class="col-xs-9"> 
+     <input type="radio" name="marry" value="false" style="font-size:1.5em;" />
+     <span>未婚</span> 
+     <input type="radio" name="marry" value="true" style="font-size:1.5em;" />
+     <span>已婚</span> 
+    </div> 
    </div>
-  </div>
-<form action="UserServlet"  id="regist_form">
-    <input type="hidden" name="method" value="updateUser"/>
-  <div class="container" style="margin-top:30px;border-bottom: 1px solid rgba(178, 178, 178, 0.24);padding: 15px">
-    <div class="col-xs-12"style="text-align:left;">
-        <div class="row" style="color: #000;line-height: 20px;">
-            账号:<span id="user_name">长明灯与奇异果</span>
-        </div>
-        <div class="row" style="color: #000;line-height: 20px;">
-            现积分:<span id=""></span>
-        </div>
-        <div class="row" style="color: #000;line-height: 20px;">
-            注册时:<span id=""></span>
-        </div>
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     爱好
+    </div> 
+    <div class="col-xs-9"> 
+     <textarea rows="2" cols="30" name="hobby" class="form-control input-lg">${user.hobby }</textarea> 
+    </div> 
+   </div>
+   
+   <div class="row">
+    <span>您在收礼品和专区购物时使用:</span>
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     姓名
+    </div> 
+    <div class="col-xs-9">
+     <input type="text" class="form-control input-lg" name="realname" value="${user.realname }" />
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     省
+    </div> 
+    <div class="col-xs-9">
+     <select id="province" class="form-control input-lg" onchange="selectprovince(this);" runat="server" name="province" value="${user.province }"></select>
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     市
+    </div> 
+    <div class="col-xs-9">
+     <select id="city" class="form-control input-lg" runat="server" name="city" value="${user.city }"></select>
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     街道
+    </div> 
+    <div class="col-xs-9">
+     <input type="text" class="form-control input-lg" name="address" value="${ user.address}" />
+    </div> 
+   </div> 
+   
+   <div class="row"> 
+    <div class="col-xs-3">
+     邮编
+    </div> 
+    <div class="col-xs-9">
+     <input type="text" class="form-control input-lg" name="postCode" value="${ user.postCode}" />  
     </div>
-</div>
-<div class="container">
-    <div class="user_data"><h3>联系信息:</h3></div>
-
-
-    <div class="user_mobile">
-        <div class="row">
-            <div  id="phone" style="display:block">
-                <b>手机 :<span id="phoneNumber"  width=50px;>13415334317</span></b>
-                <button id="button2" class="btn btn-primary btn-sm pull-right" >修改</button>
-            </div>
-            <div id="phone01" style="display:none">
-                <b>手机 :<span ><input type="text" width=50px placeholder="输入要修改的手机号" id="phoneNumber1"></span></b>
-                <button id="button3" class="btn btn-primary btn-sm pull-right" >完成</button>
-            </div>
-        </div>
-    </div>
-    <div class="user_QQ">
-        <div class="row">
-            <div  id="QQ" style="display:block">
-                <b>Q  Q :<span id="QQNumber"  width=50px;>1482816494</span></b>
-                <button id="button4" class="btn btn-primary btn-sm pull-right" >修改</button>
-            </div>
-            <div id="QQ01" style="display:none">
-                <b>Q  Q :<span ><input type="text" width=50px placeholder="输入要修改的QQ号" id="QQNumber1"></span></b>
-                <button id="button5" class="btn btn-primary btn-sm pull-right" >完成</button>
-            </div>
-        </div>
-    </div>
-    <div class="user_weixin">
-        <div class="row">
-            <div  id="weixin" style="display:block">
-                <b>微信 :<span id="weixinNumber"  width=50px;>1482816494</span></b>
-                <button id="button6" class="btn btn-primary btn-sm pull-right" >修改</button>
-            </div>
-            <div id="weixin01" style="display:none">
-                <b>微信 :<span ><input type="text" width=50px placeholder="输入要修改的微信号" id="weixinNumber1"></span></b>
-                <button id="button7" class="btn btn-primary btn-sm pull-right" >完成</button>
-            </div>
-        </div>
-    </div>
-    <div class="user_email">
-        <div class="row">
-            <div id="div1" style="display:block">
-                <b>邮箱 :<span id="email">1261407209@qq.com</span></b>
-                <button id="button" class="btn btn-primary btn-sm pull-right" >修改</button>
-            </div>
-            <div id="div2" style="display:none;">
-                <b>邮箱 :<span ><input type="text" placeholder="输入要修改的邮箱" id="email1"></span></b>
-                <button id="button1" class="btn btn-primary btn-sm pull-right" >完成</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="user_personalselect"><h3>个人信息:</h3></div>
-    <div class="user_job">
-        <div class="row">
-            <span>职业选择</span>
-            <select class="form-control select-lg">
-                <option>学生</option>
-                <option>xx</option>
-                <option>xx</option>
-                <option>xx</option>
-                <option>xx</option>
-            </select>
-        </div>
-    </div>
-    <div class="user_knowledge">
-        <div class="row">
-            <span>文化程度</span>
-            <select class="form-control">
-                <option>小学</option>
-                <option>初中</option>
-                <option>高中</option>
-                <option>本科</option>
-                <option>其他</option>
-            </select>
-        </div>
-    </div>
-    <div class="user_sexual">
-        <div class="row">性别</span>
-            <select class="form-control">
-                <option>男</option>
-                <option>女</option>
-            </select>
-        </div>
-    </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">年龄</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="年龄">
-      </div>
-      <div class="user_marry">
-          <div class="row">婚否</span>
-              <select class="form-control">
-                  <option>是</option>
-                  <option>否</option>
-                </select>
-              </div>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">爱好</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="爱好">
-      </div>
-
-
-</div>
-<div class="container">
-    <div class="user_address"><h3>地址信息</h3></div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">收货人姓名</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">省市</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">市县</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">街道</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">邮编</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="邮编">
-    </div>
-    <div class="col-xs-12">
-        <input type="submit" value="提交" class='btn btn-primary col-xs-5 pull-left'>
-        <a class="col-xs-5 pull-right  btn btn-primary" href="pages/passwordUpdate.jsp">修改密码</a>
-    </div>
-
-</form>
-    <!-- <div class="row">
-        <div class="col-sm-4 col-xs-4 col-sm-offset-1 col-xs-offset-1"><select id="province" runat="server" onchange="selectprovince(this);" style="width: 100%; height: 34px"></select></div>
-        <div class="col-sm-4 col-xs-4 col-sm-offset-1 col-xs-offset-2"> <select  id="city" runat="server" style=" width :100%;height: 34px" ></select></div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col-sm-12 col-xs-12">
-            <h4>输入详细地址:</h4><br/>
-            <textarea class="col-xs-12" rows="10" cols="10" id=""></textarea>
-        </div>
-    </div> -->
-</div>
-<script type="text/javascript">
+   </div>
+   
+    <div class="row"> 
+      <div class="col-xs-5 pull-left"> 
+       <input type="submit" value="提交" class="btn btn-primary" /> 
+      </div> 
+      <div class="col-xs-5 pull-right"> 
+       <a class="btn btn-primary " "href="pages/passwordUpdate.jsp">修改密码</a> 
+      </div> 
+    </div> 
+    
+  </form>
+  <script type="text/javascript">
     var list1 = new Array;
     var list2 = new Array;
     list1[list1.length] = "北京市";
@@ -424,12 +443,5 @@
     }
 
 </script>
-<div class="tail">
-  <div class="about container-fluid col-xs-12" style="margin: 2% auto 0 auto;background: #679FFF">
-    <div class="row">
-        <p style="text-align: center;line-height: 100%">copyright&copy;2014-2016  康乐吧</p>
-    </div>
-  </div>
-</div>
-</body>
+ </body>
 </html>
