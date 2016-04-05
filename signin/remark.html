@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+	<link rel="stylesheet" type="text/css"	href="<c:url value='/css/newTest.css'/>">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="js/jquery-1.11.3.js" ></script>
+	<script src="<c:url value='/js/remark.js'/>" type="text/javascript" ></script>
+<!-- //以下为各Input添加click事件，在事件中执行存贮；根据测试题目文本内容长度不同，设置不同尺寸的div高度 -->
+	 <script type="text/javascript">
+		$(function(){
+			var text="${tests[0].text_content }";
+			if(text.length<10){
+			$(".divtext").css("height","20px");
+			$(".divtext").css("line-height","20px");
+			}else if(text.length<300){
+				$(".divtext").css("height","120px");
+				$(".divtext").css("line-height","120px");
+			}else {
+				$(".divtext").attr("height","300px");
+			}
+			$(".divtest").css("background","red");
+		});
+	</script>
+<style type="text/css">
+*{
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+
+}
+.navbar {
+		width: 100% !important;
+		background:  #679fff;
+}
+.navbar-header .navbar-user_photo img{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		line-height: 100%;
+		margin: 2% 8% 2% 0;
+		padding: 2%;
+		vertical-align: middle;
+		background:#ffffff ;
+}
+.navbar-header .navbar-user_photo img:hover{
+		border: 1px solid #81E4FF;
+}
+.navbar-header a{
+	padding-right: 5px;
+}
+
+</style>
+
+<!-- //根据题目类型设置答题区域的div尺寸 -->
+<c:choose>
+	<c:when test="${tests[0].test_type==1 }">
+		<script type="text/javascript">
+			$(function() {
+				$(".answer").addClass("singleAnswer");
+			});
+		</script>
+	</c:when>
+	<c:when test="${tests[0].test_type==2 }">
+		<script type="text/javascript">
+			$(function() {
+				$(".answer").addClass("multiAnswer");
+			});
+		</script>
+	</c:when>
+	<c:when test="${tests[0].test_type==3 }">
+		<script type="text/javascript">
+			$(function() {
+				$(".answer").addClass("textAnswer");
+			});
+		</script>
+	</c:when>
+</c:choose>
+
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+			<div class="container-fluid">
+					<div class="navbar-header">
+
+							<!-- 网站 logo -->
+							<a class="navbar-brand" href="#">
+									<img alt="康乐吧" src="">
+							</a>
+							<!-- 网站 logo -->
+							<a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+								退出
+							</a>
+							<a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+				我的
+							</a>
+						 <!--  <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#">
+									<img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
+							</a> -->
+							<!-- 用户头像 -->
+
+					</div>
+			</div>
+	</nav>
+	<div class="container-fluid"  style="margin-top:80px;">
+	<a id="domain_navi"href="IndexServlet?method=domainNavi&tag=${domain.title }">${domain.title}</a>>>> ${project.project_name }
+	</div>
+	<div class="container-fluid"><h4 style="text-align:center;">请发表您的评论：${szhuanqu}</h4></div>
+	<form action="" id="remarkForm">
+		<div class="container-fluid" style="text-align:center;padding-bottom:20px;">评论人：<input id="user" type="text" readonly value="${user_account}"/></div>
+		<div class="container-fluid"><input id="project" type="hidden" value="${project_id}"/></div>
+		<div class="container-fluid"><textarea  id="content" class="col-xs-12" cols="100"></textarea></div>
+		<div class="container-fluid" style="padding-top:20px;"><span><a class="btn btn-primary pull-right"href="javascript:onSave()">提交评论</a></span></div>
+	</form>
+	<div class="container-fluid" style="text-align:left;">所有评论</div>
+			<div id="remarkTable" class="container col-xs-12" >
+				<!-- <c:forEach items="${remarks }" var="mem"> -->
+				<div  class="container"style="border-top:1px solid #ccc;margin:0 4% 0 2%;">
+
+									<div class="row ">
+										<!-- ${mem.user_account } -->
+									我是大哥
+									</div>
+									<!-- ${mem.content } -->
+									<div>balalalalalalalalalla</div>
+									<!-- ${mem.remark_date} -->
+									<div class="row " style="text-align:right;">2016/2/3</div>
+
+				</div>
+				<div  class="container"style="border-top:1px solid #ccc;margin:0 4% 0 2%;">
+
+									<div class="row ">
+										<!-- ${mem.user_account } -->
+									我是大哥
+									</div>
+									<!-- ${mem.content } -->
+									<div>balalalalalalaalalla</div>
+									<!-- ${mem.remark_date} -->
+									<div class="row " style="text-align:right;">2016/2/3</div>
+
+				</div>
+				<!-- </c:forEach> -->
+			</div>
+
+
+
+
+
+		<div class="about container-fluid col-xs-12" style="margin: 2% auto 0 auto;background: #679FFF;position:absolute;bottom:0;">
+				<div class="row">
+						<p style="text-align: center;line-height: 100%;padding-top: 4%"><span style="padding: 2% ">导航</span><span style="padding: 2%">客户端</span><span style="padding: 2% ">吐槽</span></p>
+				</div>
+				<div class="row">
+						<p style="text-align: center;line-height: 100%">xxxx(粤ICP0000XXXX)</p>
+				</div>
+		</div>
+
+</body>
+</html>
