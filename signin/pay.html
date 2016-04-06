@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+        }
+        .navbar {
+            width: 100% !important;
+            background:  #679fff;
+        }
+        .navbar-header .navbar-user_photo img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 100%;
+            margin: 2% 8% 2% 0;
+            padding: 2%;
+            vertical-align: middle;
+            background:#ffffff ;
+        }
+        .navbar-header .navbar-user_photo img:hover{
+            border: 1px solid #81E4FF;
+        }
+        .navbar-header a{
+        	padding-right: 5px;
+        }
+        .container-fluid{
+        	margin: 0 2%;
+        	padding: 0px;
+          border:1px solid #ccc;
+        }
+        .row{
+        margin: 0px 4%;;
+        text-align: left;
+        font-size: 16px;
+        padding: 2%;
+
+        }
+        h4{
+        	margin: 0 2%;
+        	padding: 2%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- 顶部导航栏，有用户头像，用于跳转到登陆界面和注册界面的  -->
+    <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <!-- 网站 logo -->
+                <a class="navbar-brand" href="#">
+                    <img alt="康乐吧" src="">
+                </a>
+                <!-- 网站 logo -->
+                <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                	退出
+                </a>
+                <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+					我的
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <!-- 顶部导航栏，有用户头像  -->
+    <h4 style="margin-top:80px;">您需要支付的金额为：${totalPrice}</h4>
+    <h4>请核对收货人信息</h4>
+    <div class="container-fluid">
+      <div class="row"> 姓名：${user.name}</div>
+      <div class="row"> 地址：${user.address}</div>
+      <div class="row">邮编:${user.postCode}</div>
+      <div class="row">电话:${user.telephone}</div>
+   </div>
+   <div class="row" style="padding:4%;">
+      <a class="btn btn-primary pull-left" href="">确认</a>
+      <a class="btn btn-primary pull-right" href="">修改</a>
+   </div>
+    <!-- 页脚 -->
+    <div class="about container-fluid col-xs-12" style="margin: 2% auto 0 auto;background: #679FFF;position:absolute;bottom:0;">
+        <div class="row">
+            <p style="text-align: center;line-height: 100%;padding-top: 4%"><span style="padding: 2% ">导航</span><span style="padding: 2%">客户端</span><span style="padding: 2% ">吐槽</span></p>
+        </div>
+        <div class="row">
+            <p style="text-align: center;line-height: 100%">xxxx(粤ICP0000XXXX)</p>
+        </div>
+    </div>
+    <!-- 页脚 -->
+
+
+</body>
+</html>
