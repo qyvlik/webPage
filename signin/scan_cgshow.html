@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <link rel="stylesheet" type="text/css" href="<c:url value='/css/newTest.css'/>">
+    <script src="<c:url value='/js/myTest.js'/>" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+    }
+    .navbar {
+        width: 100% !important;
+        background:  #679fff;
+    }
+    .navbar-header .navbar-user_photo img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 100%;
+        margin: 2% 8% 2% 0;
+        padding: 2%;
+        vertical-align: middle;
+        background:#ffffff ;
+    }
+    .navbar-header .navbar-user_photo img:hover{
+        border: 1px solid #81E4FF;
+    }
+    .row{
+      margin: 0;
+    }
+    .col-xs-2,col-xs-8,.col-xs-12{
+      padding: 2px;
+      text-align: center;
+      font-size: 16px;
+      margin: 0px;
+    }
+    .col-xs-6{
+      padding: 0px;
+    }
+    .first_column{
+      margin-bottom: 100px;
+    }
+    td{
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    #information{
+      margin-left: 1px;
+      margin-right:1px;
+      border-bottom:1px solid #ccc;
+    }
+    </style>
+
+</head>
+<body>
+	<!-- 插入头部页面 -->
+	<!-- <jsp:include page="test_navi.jsp"></jsp:include>
+	<jsp:include page="test_navi.jsp"></jsp:include>
+    <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px">
+        <div class="row">
+            <h4 style="text-align: left"><a id="domain_navi"
+			href="IndexServlet?method=cargodomainNavi&tag=${cargodomain.title }">${cargodomain.title}</a> >>> ${cargo.project_name }</h4>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px ">
+        <div class="row">
+            <h4 style="text-align: left">${cargo.salecomm}</h4>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px ">
+        <div class="row">
+            <h4 style="text-align: left">${cargo.specifications}</h4>
+        </div>
+    </div>
+
+    <c:if test="${not empty tests[0].video }">
+    <div class="container-fluid" >
+        <div class="row" id="question" style="margin: 5% auto 2% auto;">
+            <video class="divpicture" height="150px" controls="controls">
+				<source src="${tests[0].video }" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    </c:if>
+
+    <c:if test="${not empty tests[0].picture}">
+        <div class="container-fluid" >
+            <div class="row" id="question" style="margin: 5% auto 2% auto;">
+                <img src="${tests[0].picture}" height="150px" width="100%">
+            </div>
+        </div>
+	</c:if>
+
+    <div class="row" id="answer" style="margin: 5% auto 2% auto;">
+		<p class="ptext" style="font-size:1.2em;text-align: left;padding-left: 5%">${tests[0].text_content }</p>
+        <table class="radioTable">
+            <c:if test="${not empty cargo.guigea}">
+                <tr>	<td><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=1' />">${cargo.guigea }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guigeb}">
+                <tr><td><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=2' />">${cargo.guigeb }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guigec}">
+                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=3' />">${cargo.guigec }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guiged}">
+                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=4' />">${cargo.guiged }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guigee}">
+                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=5' />">${cargo.guigee }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guigef}">
+                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=6' />">${cargo.guigef }</a></span></td>
+                </tr>
+            </c:if>
+
+            <c:if test="${not empty cargo.guigeg}">
+                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=7' />">${cargo.guigeg }</a></span></td>
+                </tr>
+            </c:if>
+        </table>
+    </div> -->
+
+	<div class="divcontrol">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xs-5 "><span class="pre "><a
+              href="<c:url value='/CgshowServlet?method=loadScan&tag=pre' />" class=" pull-left btn btn-primary">上一页</a></span>
+          </div>
+          <div class="col-xs-2">
+            <!-- ${currentPage}/${totalPage } -->
+            1/2
+          </div>
+          <div class="col-xs-5"><span class="next "><a
+              href="<c:url value='/CgshowServlet?method=loadScan&tag=next' />" class=" pull-right btn btn-primary">下一页</a></span>
+            </div>
+        </div>
+
+        <div class="row" >单价:￥${cargo.sale_price }</div>
+        <div class="row" ><a>送至:（用户地址） </a></div>
+        <div class="row"><a>运费:总价49元以上免运费。 </a></div>
+        <div class="row" ><a>服务 :中心发货并提供售后服务</a></div>
+        <div class="row" ><a  href="<c:url value='/GoodsServlet?method=saveToCart&goods_id=${cargo.id}&currentPage=${currentPage}' />" >购买</a>${mem.instruction }
+        </div>
+        <div class="row" style="padding-top:20px;">
+          <div class="col-xs-6"><a class="btn btn-primary pull-left"href="<c:url value='/IndexServlet?method=entercargoRemark&cargo_id=${cargo.id }' />">评论</a></div>
+          <div class="col-xs-6" >  <a class="btn btn-primary pull-right" href="IndexServlet?method=getCargo">返回专区</a></div>
+      </div>
+
+	</div>
+
+	<!-- <div class="tail">
+		<jsp:include page="foot.jsp"></jsp:include>
+	</div> -->
+</body>
+</html>
