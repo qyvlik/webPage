@@ -62,20 +62,41 @@
 </head>
 <body>
 	<!-- 插入头部页面 -->
-	<!-- <jsp:include page="test_navi.jsp"></jsp:include>
-	<jsp:include page="test_navi.jsp"></jsp:include>
+  <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
+      <div class="container-fluid">
+          <div class="navbar-header">
+
+              <!-- 网站 logo -->
+              <a class="navbar-brand" href="#">
+                  <img alt="康乐吧" src="">
+              </a>
+              <!-- 网站 logo -->
+              <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                退出
+              </a>
+              <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+        我的
+              </a>
+             <!--  <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#">
+                  <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
+              </a> -->
+              <!-- 用户头像 -->
+
+          </div>
+      </div>
+  </nav>
     <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px">
         <div class="row">
             <h4 style="text-align: left"><a id="domain_navi"
 			href="IndexServlet?method=cargodomainNavi&tag=${cargodomain.title }">${cargodomain.title}</a> >>> ${cargo.project_name }</h4>
         </div>
     </div>
-    <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px ">
+    <div class="container-fluid" style="margin: 5% 4% 2% 4%;border-bottom: 1px ">
         <div class="row">
             <h4 style="text-align: left">${cargo.salecomm}</h4>
         </div>
     </div>
-    <div class="container-fluid" style="margin: 15% 4% 2% 4%;border-bottom: 1px ">
+    <div class="container-fluid" style="margin: 5% 4% 2% 4%;border-bottom: 1px ">
         <div class="row">
             <h4 style="text-align: left">${cargo.specifications}</h4>
         </div>
@@ -101,43 +122,43 @@
 
     <div class="row" id="answer" style="margin: 5% auto 2% auto;">
 		<p class="ptext" style="font-size:1.2em;text-align: left;padding-left: 5%">${tests[0].text_content }</p>
-        <table class="radioTable">
+        <div class="radioTable container">
             <c:if test="${not empty cargo.guigea}">
-                <tr>	<td><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=1' />">${cargo.guigea }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=1' />">${cargo.guigea }</a></span>
+                </div>
             </c:if>
 
             <c:if test="${not empty cargo.guigeb}">
-                <tr><td><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=2' />">${cargo.guigeb }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a href="<c:url value='/CgshowServlet?method=loadScan&tag=2' />">${cargo.guigeb }</a></span>
+                </div>
             </c:if>
 
             <c:if test="${not empty cargo.guigec}">
-                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=3' />">${cargo.guigec }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=3' />">${cargo.guigec }</a></span>
+                </div>
             </c:if>
 
             <c:if test="${not empty cargo.guiged}">
-                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=4' />">${cargo.guiged }</a></span></td>
+                <div class="row"><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=4' />">${cargo.guiged }</a></span>
                 </tr>
             </c:if>
 
             <c:if test="${not empty cargo.guigee}">
-                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=5' />">${cargo.guigee }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=5' />">${cargo.guigee }</a></span>
+                </div>
             </c:if>
 
             <c:if test="${not empty cargo.guigef}">
-                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=6' />">${cargo.guigef }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=6' />">${cargo.guigef }</a></span>
+                </div>
             </c:if>
 
             <c:if test="${not empty cargo.guigeg}">
-                <tr><td><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=7' />">${cargo.guigeg }</a></span></td>
-                </tr>
+                <div class="row"><span class="next"><a	href="<c:url value='/CgshowServlet?method=loadScan&tag=7' />">${cargo.guigeg }</a></span>
+                </div>
             </c:if>
-        </table>
-    </div> -->
+        </div>
+    </div>
 
 	<div class="divcontrol">
       <div class="container-fluid">
@@ -167,9 +188,12 @@
       </div>
 
 	</div>
-
-	<!-- <div class="tail">
-		<jsp:include page="foot.jsp"></jsp:include>
-	</div> -->
-</body>
+  <div class="about container-fluid col-xs-12" style="margin: 2% auto 0 auto;background: #679FFF">
+      <div class="row">
+          <p style="text-align: center;line-height: 100%;padding-top: 4%"><span style="padding: 2% ">导航</span><span style="padding: 2%">客户端</span><span style="padding: 2% ">吐槽</span></p>
+      </div>
+      <div class="row">
+          <p style="text-align: center;line-height: 100%">xxxx(粤ICP0000XXXX)</p>
+      </div>
+  </div></body>
 </html>
