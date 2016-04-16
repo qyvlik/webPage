@@ -12,7 +12,8 @@
             padding: 0;
             margin: 0;
             list-style-type: none;
-           
+            font-family: Helvetica, STHeiti, Droid Sans Fallback;
+
         }
         .navbar {
             width: 100% !important;
@@ -30,6 +31,9 @@
         }
         .navbar-header .navbar-user_photo img:hover{
             border: 1px solid #81E4FF;
+        }
+        .navbar-user_photo{
+          line-height: 50px;
         }
         .navbar-header a{
         	padding-right: 5px;
@@ -64,7 +68,7 @@
             border-bottom: 1px solid #dddddd;
         }
         .list a,.list span{
-            display: inline-block; 
+            display: inline-block;
             font-size: 18px;
             line-height: 35px;
             color: #333333;
@@ -83,7 +87,7 @@
             line-height: 50px;
             font-size: 18px;
         }
-        	   
+
         .article{
             width: 86%;
             padding-left: 0px;
@@ -105,39 +109,39 @@
 
         }
     </style>
-  
+
 </head>
 <body>
     <!-- 顶部导航栏，有用户头像，用于跳转到登陆界面和注册界面的  -->
     <nav class="navbar navbar-default navbar-fixed-top col-sm-12 col-md-12 col-lg-12">
         <div class="container-fluid">
             <div class="navbar-header">
-            
+
                 <!-- 网站 logo -->
                 <a class="navbar-brand" href="#">
                     <img alt="康乐吧" src="">
                 </a>
                 <!-- 网站 logo -->
-                <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
+                <!-- <a  style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
                 	退出
                 </a>
                 <a style="font-size:16px;line-height: 50px;"class="navbar-user_photo pull-right col-lg-push-2" href="#">
 					我的
-                </a>
-               <!--  <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#"> 
-                    <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
                 </a> -->
+                <a class="navbar-user_photo pull-right col-lg-push-2"id="login" href="#">
+                    <img alt="登陆" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1457163173&di=f743cadfb9237653a94920504a847160&src=http://baozoumanhua.com/avatars/original/missing.png?1339749755">
+                </a>
                 <!-- 用户头像 -->
-                
+
             </div>
         </div>
     </nav>
     <!-- 顶部导航栏，有用户头像  -->
-    
+
     <!-- -->
     <div class="container col-lg-12 col-md-12 col-sm-12">
         <div class="row">
-            <div class="col-xs-12 ">
+            <div class="col-xs-12 " style="margin-top:4%;">
                 <ul>
                    <div class="col-xs-3 "><li><a href="buy.html">常识</a> </li></div>
                     <div class="col-xs-3 "><li><a href="###">健康</a> </li></div>
@@ -146,7 +150,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-xs-12">
                 <ul>
@@ -170,7 +174,7 @@
         </div>
     </div>
     <!-- 搜索区 -->
-    
+
     <!-- 轮播图，其实就是广告区 -->
     <div class="container-fluid col-sm-12 col-md-12 col-lg-12">
         <div class="row">
@@ -243,12 +247,12 @@
     <!-- 文章分区 -->
     <div class="container-fluid information " style="margin: 0 4% 0 4%;">
         <h4 style="color: #337AB7;">猜你喜欢</h4>
-          
+
          <div class="row list" >
             <div class="col-xs-9 article">
                 <a href="###">黄瓜味薯很好哈哈哈哈</a>
             </div>
-            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">2224</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
+            <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">224</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
          <div class="row list" >
@@ -272,7 +276,7 @@
             <div class="col-xs-3 comment"><a style="float: right;" href="http://www.baidu.com" style="text-decoration: none;"><span style="float: left;" class="number">24</span> <span  class=" glyphicon glyphicon-comment1"aria-hidden="true"></span></a></div>
             <!--span中的class是留给count计算评论数的-->
         </div>
-        
+
         <div class="row " style="padding-top: 2%;border-top: 1px solid #dddddd;">
             <a href="http://www.baidu.com"><button class="btn btn-sm btn-default col-xs-11" style="margin: 0 2% 2%;border: none;" id="#"> 加载更多>>></button></a>
         </div>
@@ -296,8 +300,8 @@
         </div>
     </div>
     <!-- 页脚 -->
-      <script type="text/javascript">  
-        
+      <script type="text/javascript">
+
          var number=document.getElementsByClassName('number');
             for(var i=0;i<number.length;i++){
                  if (parseInt(number[i].innerText)<99) {
@@ -305,6 +309,6 @@
                 }
             }
     </script>
-    
+
 </body>
 </html>
